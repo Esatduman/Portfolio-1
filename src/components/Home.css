@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+    font-family: 'Yantramanav';
+    font-weight: lighter;
+    overflow-x: hidden;
+}
+
+.home-container {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    padding: 0 20px; /* Add padding on the left and right */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.about-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color:#555555; 
+}
+
+.underline {
+    position: relative;
+    text-align: center; /* Center align the content inside .underline */
+    padding-bottom: 10px; /* Add space below the h1 text */
+}
+
+.underline::before, .underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.underline::before {
+    width: 12rem; /* Width of the first line */
+    height: 4px; /* Line thickness */
+    background-color: #555555; /* Line color */
+    top: 80%; /* Position the first line below the h1 text */
+    border-radius: 6px;
+}
+
+.underline::after {
+    width: 6rem; /* Width of the second line (smaller than the first one) */
+    height: 4px; /* Line thickness for the second line */
+    background-color: #555555; /* Color for the second line */
+    top: calc(95% + 5px); /* Position the second line below the first one */
+    border-radius: 6px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 395;
+    text-align: justify; /* Justify the text to create a block-like appearance */
+    text-align-last: center; /* Center the last line of the paragraph */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 0 auto; 
+    width: 55%;
+    margin-top: 100px; /* Adjust space above the paragraph */
+
+}
+
+.quote-mark {
+    margin-right: 30px; /* Adds space to the right of the image */
+    vertical-align: middle; /* Aligns the image vertically with the text */
+
+}
+
+.quote-mark2 {
+    margin-left: 30px; /* Adds space to the left of the image */
+    vertical-align: middle; /* Aligns the image vertically with the text */
+    transform: scalex(-1) scaleY(-1);
+}
+
+.Gears {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: visible; 
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: visible; /* Allow images to overflow outside the container */
+}
+
+.half-out {
+    width: 20%; /* Increase the width to ensure half will go outside */
+  }
+
+.GearsB-left {
+  margin-left: -10%; /* Move it left by 25% of its width */
+
+}
+
+.GearsB-right {
+   margin-right: -10%;
+   transform: rotate(180deg) scaleY(-1); /* Flip the image 180 degrees */
+
+}
+
+.skills-header {
+    text-align: center;
+    font-size: 3rem;
+    color:#555555; 
+    margin-bottom: 20px; /* Add some spacing below the header */
+}
+
+.skills-header::before {
+    width: 6rem; /* Small underline width */
+}
+
+.skills-header::after {
+    width: 3rem; /* Small underline second line width */
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; /* Reduce width to center-align */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+  
+  .skill-category {
+    text-align: center;
+    flex-grow: 1; /* Ensures even spacing between categories */
+  }
+
+  .skill-category h3 {
+    margin-left: 30px;
+    font-size: 1.9rem;
+    color: #555555;
+  }
+  
+  .skill-category ul {
+    color: #555555;
+    margin-left: 30px;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0;
+  }
+  
+  .skill-category:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #555555; /* Vertical line color */
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+
+.skill-category ul li {
+    margin: 15px 0; /* Adds 10px space above and below each list item */
+}
+
+
+

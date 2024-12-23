@@ -1,0 +1,169 @@
+body {
+    font-family: 'Yantramanav', sans-serif;
+  }
+  
+
+.proj-h {
+    width: 100%;
+    height: auto; /* Cover 50% of the viewport height */
+    background-color: #D4D4D4; /* Replace with your desired color */
+    align-items: center;
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Ensure padding and border are included in height/width */
+    position: sticky;
+    overflow: hidden; /* Clip any content that overflows */
+  }
+
+
+.proj-content {
+    display: flex;
+    justify-content: center; /* Center elements vertically within the container */
+    padding: 0;
+    margin-top: 0; /* Remove the margin-top */
+  }
+
+
+  .tree-logo{
+    width: 17rem;
+  }
+  
+  .box_content{
+    margin-left: 5rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 1.5rem;
+    padding: 0;
+
+  }
+
+  .proj_info{
+    color:#555555;
+  }
+  .welcome{
+    font-weight: 300;
+    color: #555555;
+  }
+
+  .grid1{
+    margin-right: 70px;
+    width: 300px; /* Set the width of the image */
+    height: auto; /* Keep the aspect ratio */
+    max-width: 100%; /* Make sure it doesn’t overflow the parent container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+
+
+  .github {
+    width: 200px; /* Set a smaller width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent it from overflowing the container */
+    object-fit: contain; /* Ensure the image fits inside the container without distortion */
+  }
+
+  .Gitpic {
+    width: 200px; /* Set a smaller width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent it from overflowing the container */
+    object-fit: contain; /* Ensure the image fits inside the container without distortion */
+  }
+
+  /* Projects section */
+.projects-section {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+  gap: 4rem; /* Space between boxes */
+  justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically if needed */
+    width: 100%; /* Make grid take up full width */
+    max-width: 800px; /* Set a max width for the grid */
+    margin: 0 auto; /* Center the grid container horizontally */
+}
+
+.project-box {
+  width: 450px;
+  border-radius: 15px;
+  height: 350px; /* Increased height to fit content */
+  background-color: #E0E0E0;
+  border: 2px solid #ccc;
+  overflow: hidden; /* Contains the image */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Height for the image */
+  object-fit: cover; /* Makes sure image covers area nicely */
+}
+
+.project-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+  margin: 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hangman-image {
+  height: 150px;
+  width: 90%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Home Icon */
+.icon-container {
+  position: absolute; /* Keeps it in a fixed position on the page */
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  cursor: pointer; /* Shows a pointer on hover */
+}
+
+.home-icon {
+  font-size: 50px; /* Makes the icon larger */
+  color: #333; /* Default color */
+  transition: transform 0.2s, color 0.2s; /* Smooth effect on hover */
+}
+
+.home-icon:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge the icon */
+}
+
+.home-icon:active {
+  transform: scale(1.1); /* Slightly shrink on click for feedback */
+}
