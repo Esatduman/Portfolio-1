@@ -36,28 +36,28 @@ function Projects() {
             link: "https://github.com/Esatduman/Client-Server-HangMan"
              
         },
-        {
-            id: 4,
-            title: "Project 2",
-            description: "Brief description of project 2. What it does and technologies used.",
-            image: "/path-to-project2-image.jpg",
-            link: "/project2"
-        },
-        {
-            id: 5,
-            title: "Project 2",
-            description: "Brief description of project 2. What it does and technologies used.",
-            image: "/path-to-project2-image.jpg",
-            link: "/project2"
-        },
-        {
-            id: 6,
-            title: "Project 2",
-            description: "Brief description of project 2. What it does and technologies used.",
-            image: "/path-to-project2-image.jpg",
-            link: "/project2"
-        },
-        // Add more projects as needed
+        // {
+        //     id: 4,
+        //     title: "Project 2",
+        //     description: "Brief description of project 2. What it does and technologies used.",
+        //     image: "/path-to-project2-image.jpg",
+        //     link: "/project2"
+        // },
+        // {
+        //     id: 5,
+        //     title: "Project 2",
+        //     description: "Brief description of project 2. What it does and technologies used.",
+        //     image: "/path-to-project2-image.jpg",
+        //     link: "/project2"
+        // },
+        // {
+        //     id: 6,
+        //     title: "Project 2",
+        //     description: "Brief description of project 2. What it does and technologies used.",
+        //     image: "/path-to-project2-image.jpg",
+        //     link: "/project2"
+        // },
+        // // Add more projects as needed
     ];
 
     return (
