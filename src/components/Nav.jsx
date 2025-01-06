@@ -9,7 +9,7 @@ function Nav() {
         <li><Link to="/projects">Projects</Link></li>
         <li><a href="/EsatDuman_Resume2024.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
     </header>
