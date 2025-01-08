@@ -10,20 +10,23 @@ import silent from '../assets/SIlent-Spaces-New.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import hang from '../assets/client-serevr.png';
+import cta from '../assets/Chicago_Transit_Authority_Logo.svg.png';
+import han from '../assets/TowerOfHan.gif';
+import card from '../assets/Baccarat_Display.png';
 
 function Projects() {
     // Array of project data
     const projects = [
         {
             id: 1,
-            title: "Sum.ai",
+            title: "Sum.ai - React",
             description: "Web application that summarizes users texts.",
             image: sum1, // Add your image path
             link: "https://main.d25a0vvxrfge35.amplifyapp.com/" // Add your project link
         },
         {
             id: 2,
-            title: "Silent Spaces",
+            title: "Silent Spaces - React & Firebase",
             description: "Silent Spaces is an app that helps users find and create quiet spaces for studying, meetings, and group activities. Built with React and Firebase, it uses the Google Maps API for real-time location data, enabling easy management of silent spaces.",
             image: silent,
             link: "https://esatduman.github.io/Silent-Spaces/"
@@ -31,11 +34,33 @@ function Projects() {
         {
             id: 3,
             title: "Client-Server HangMan in Java-Maven",
-            description: "Fun HangMan game where you can play by creating your own server and adding a client its very fun!",
+            description: "Using JAVA and FXML I created a fun HangMan game where you can play by creating your own server and adding a client its very fun!",
             image: hang,
             link: "https://github.com/Esatduman/Client-Server-HangMan"
              
         },
+        {
+            id: 4,
+            title: "CTA - Chicago Transit Authority - Analysis",
+            description: "Using the Python and SQL program that inputs commands from the user and outputs data from the CTA2 L daily ridership database. The program starts by outputting some basic stats #retrieved from the database",
+            image: cta,
+            link: "https://github.com/Esatduman/CTA-App-Analysis"
+              
+        },
+        {
+            id: 5,
+            title: "Recursive Hanoi Tower - C++",
+            description: "This project is about the Tower of Hanoi puzzle. The program calculates the minimum number of moves required to solve a Tower of Hanoi puzzle. I have created functions and a loops that uses recursive conditions to get the disk moving through the puzzle.",
+            image: han,
+            link: "https://github.com/Esatduman/CTA-App-Analysis" 
+        },
+        {
+            id: 6,
+            title: "Baccarat Game - Java",
+            description: "The Baccarat Game Application is a console-based or graphical user interface (GUI)-enabled program developed in Java that simulates the popular casino card game of Baccarat. This project aims to provide users with an engaging gaming experience by incorporating real-world Baccarat rules, interactive gameplay",
+            image: card,
+            link: "https://github.com/Esatduman/CTA-App-Analysis" 
+        }
         // {
         //     id: 4,
         //     title: "Project 2",
@@ -86,7 +111,7 @@ function Projects() {
             </header>
 
             <div className="projects-section">
-    <h2 className="projects-title">Explore More Projects</h2>
+    <h2 className="projects-title">Explore My Projects</h2>
     <div className="projects-grid">
         {projects.map((project) => (
             <a 
