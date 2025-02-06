@@ -1,0 +1,24 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hide the drawer */
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .drawer.open {
+    right: 0;  /* Slide in when open */
+  }
+  
+  /* Close button inside the drawer */
+  .close-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }

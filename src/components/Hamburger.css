@@ -1,0 +1,24 @@
+/* Hamburger.css */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Ensures it's on top of other elements */
+  }
+  
+  .bar {
+    height: 4px;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  
+  /* Make hamburger appear only on mobile */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex; /* Ensure it shows on mobile devices */
+    }
+  }
+  

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Header.css';
 import EsatD from '../assets/EsatD.png';
 import dot from '../assets/image 7.png';
@@ -9,9 +8,18 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'; // Import the Link component
 import Nav from './Nav';
-
+import React, { useState } from 'react';
+import Hamburger from './Hamburger'; // Import the hamburger component
 
 function Header() {
+
+    // State to control drawer (hamburger) open/close
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
     return (
         <header className="header">
             <Nav />
@@ -45,7 +53,22 @@ function Header() {
                     <img className="EsatD" src={EsatD} alt="EsatsPic" />
                     <img className="cpu" src={dot} alt="dot" />
                 </div>
+                {/* Hamburger Menu Button */}
+        <div className="hamburger-container">
+          <Hamburger onClick={toggleDrawer} /> {/* Toggle drawer on click */}
+        </div>
+
+      </div>
+
+      {/* Add the Drawer (Sidebar) */}
+      <div className={`drawer ${drawerOpen ? 'open' : ''}`}>
+        <button className="close-btn" onClick={toggleDrawer}>X</button>
+        {/* You can add links or other elements here for the drawer */}
+        <Link to="/" onClick={toggleDrawer}>Home</Link>
+        <Link to="/projects" onClick={toggleDrawer}>Projects</Link>
+        <Link to="/contact" onClick={toggleDrawer}>Contact</Link>
             </div>
+        <div className={`drawer-backdrop ${drawerOpen ? 'open' : ''}`} onClick={toggleDrawer}></div>
         </header>
     );
 }

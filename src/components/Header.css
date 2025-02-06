@@ -22,7 +22,7 @@ body {
   margin-right: 6.5rem;
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 3rem;
@@ -58,7 +58,8 @@ body {
 }
 
 .Logo {
-  width: 15rem;
+  width: 40%;
+  max-width:100vw;
   height: auto;
 }
 
@@ -178,9 +179,82 @@ body {
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 768px) {
+.header, .intro-container, .button-wrapper, .header-images {
+  position: relative; /* Ensure the content stays below the drawer */
+  z-index: 1; /* Lower than the drawer */
+}
+
+.hamburger-container {
+  position: absolute;
+  top: 20px; /* Adjust to your preference */
+  right: 20px; /* Positions it on the right side */
+  
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; /* or your desired width */
+  height: 100vh; /* full height */
+  background-color: #5a5a5a; /* Solid gray color */
+  z-index: 9999; /* High z-index for the drawer */
+  transform: translateX(100%); /* initially off-screen */
+  transition: transform 0.3s ease;
+}
+
+.drawer.open {
+  transform: translateX(0); /* Slide the drawer into view */
+}
+
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9998; /* Just below the drawer */
+  display: none; /* Hidden by default */
+}
+
+.drawer.open + .drawer-backdrop {
+  display: block; /* Show the backdrop when drawer is open */
+}
+
+.drawer a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
   .myproj-btn {
     min-width: 210px;
     padding: 10px 25px;
   }
+
+  .nav-links  {
+    display: none;
+  }
+
+   /* Prevent horizontal scrolling on smaller screens */
+   html, body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+
+
 }
