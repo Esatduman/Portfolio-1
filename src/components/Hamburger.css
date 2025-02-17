@@ -1,12 +1,12 @@
 /* Hamburger.css */
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 1001; /* Ensures it's on top of other elements */
+  display: none; /* Hide by default on larger screens */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
   }
   
   .bar {
